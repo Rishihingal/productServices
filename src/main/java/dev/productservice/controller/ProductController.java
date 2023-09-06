@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1/products")
 public class ProductController {
     @GetMapping("{id}")
-    public String getProductbyId(@PathVariable("id") long id) {
+    public String getProductById(@PathVariable("id") long id) {
         return "Here is product id: " + id;
     }
     @GetMapping()
